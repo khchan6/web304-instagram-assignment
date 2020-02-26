@@ -1,0 +1,17 @@
+/* Scaled picture height is about 900 px */
+/* after width restrict to 600 px */
+
+.splash {
+    width: 100%;
+    height: 750px; /* bottom of picture truncate by 150px */
+    overflow: hidden;
+    position: relative;
+}
+
+
+.splash > img {
+    position: absolute;
+    bottom: -120px; /* move picture up by 120px */
+    left: auto;
+    max-width: 600px;
+} 

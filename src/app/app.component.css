@@ -1,0 +1,19 @@
+.column {
+    flex: 25%;
+    padding: 10px;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    height: 62px;
+    width: 33%;
+  }
+  
+  .sticky>img{
+    display: block; 
+    margin-right: auto; 
+    margin-left: auto; 
+    width: 500px;
+    height: 62px;
+  }

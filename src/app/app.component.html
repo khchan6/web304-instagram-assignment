@@ -1,0 +1,24 @@
+<!-- Web304 mini assignment-->
+<!-- Date: 2/25/2020-->
+<!-- Student: Kim Chan-->
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="column" style="background-color:lavender;"></div>
+    <div class="column" >
+      <header class="sticky">
+        <img src="../assets/instagram.PNG">
+      </header>
+      <!-- Repeat post from Json data -->
+      <div style="margin-top: 63px;" *ngFor="let data of datas">
+
+        <app-user profilephoto="{{data.profilePhoto}}" username="{{data.username}}" title="{{data.title}}"></app-user>
+        <app-splash photo="{{data.photo}}" ></app-splash>
+        <app-action></app-action>        
+        <app-description username="{{data.username}}" description="{{data.description}}"></app-description>
+      </div>
+    </div>
+    <div class="column" style="background-color:lavender;"></div>
+  </div>
+</div>
